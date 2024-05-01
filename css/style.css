@@ -395,6 +395,7 @@ iframe {
     display: flex;
     gap: 1.5rem;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .sciences__card {
@@ -432,8 +433,12 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+}
+
+.partners__card{
+    text-align: center;
 }
 
 footer {
@@ -811,7 +816,7 @@ hr {
     }
 
     .section2 {
-        margin: 8rem;
+        margin: 2.5rem 8rem;
         padding: 3rem 1.5rem;
     }
 
@@ -822,14 +827,14 @@ hr {
     .news__container,
     .students__container,
     .partners__container {
-        margin: 8rem;
+        margin: 2rem 8rem;
     }
 
     .service,
     .announcement__container,
     .sciences__container,
     footer {
-        padding: 1rem 8rem;
+        padding: 2rem 8rem;
     }
 
     .sciences__card {
@@ -843,6 +848,10 @@ hr {
 
     .modal__menyu{
         display: none;
+    }
+
+    .footer__item ul li a{
+        font-size: 1rem;
     }
 
 }
