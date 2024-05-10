@@ -5,7 +5,8 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Open sans", sans-serif;
+    max-width: 1536px;
 }
 
 .header__top {
@@ -25,7 +26,7 @@ body {
     font-size: 14px;
 }
 
-.logo__content .logo img{
+.logo__content .logo img {
     width: 80px;
 }
 
@@ -72,11 +73,13 @@ body {
 }
 
 .header__bottom {
-    /* position: fixed; */
+    position: sticky;
+    top: 0;
     z-index: 5;
     width: 100%;
     color: white;
     padding: 1rem 8rem;
+    box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
     background: linear-gradient(135deg, #00816F 0%, #074582 30%, white 10%, white 100%);
 }
 
@@ -200,15 +203,9 @@ body {
     font-size: 30px;
 }
 
-.section2 .card:last-child {
-    gap: 10px;
-}
 
-.section2 .card:last-child .card__img {
-    padding-top: 5px;
-}
 
-.section2 .card:last-child .card__img img {
+.section2 .card:nth-child(5) .card__img img {
     width: 50px;
 }
 
@@ -305,9 +302,10 @@ body {
     color: white;
 }
 
-iframe {
-    width: 100%;
-    height: 600px;
+.video__contaiener{
+    padding: 0 10rem;
+    margin: 12px 0;
+    text-align: center;
 }
 
 .announcement__container {
@@ -499,6 +497,7 @@ footer {
 .network {
     display: flex;
     justify-content: space-between;
+    gap: 12px;
 }
 
 .network a {
@@ -516,8 +515,12 @@ footer {
     color: white;
 }
 
-.footer__logo__content .logo img{
+.footer__logo__content .logo img {
     width: 80px;
+}
+
+.footer__logo__content span:last-child{
+    font-size: 14px;
 }
 
 
@@ -697,7 +700,7 @@ footer {
     }
 
     .footer__item {
-        width: 20%;
+        width: 18%;
         margin-top: 1rem;
     }
 
@@ -812,7 +815,7 @@ footer {
     }
 
     .header__bottom {
-        padding: 1rem 8rem;
+        padding: 3px 8rem;
     }
 
     .logo__content span:last-child {
@@ -843,7 +846,7 @@ footer {
     }
 
     .section2 .card {
-        width: 20%;
+        width: 16%;
     }
 
     .service .section2 .card {
@@ -881,7 +884,7 @@ footer {
     }
 
     .video__tatu {
-        width: 100%;
+        width: 70%;
         height: 500px;
     }
 
@@ -980,11 +983,6 @@ footer {
 
     .service .section2 .card {
         width: 60%;
-    }
-
-    iframe {
-        width: 100%;
-        height: 300px;
     }
 
     .ann__card {
